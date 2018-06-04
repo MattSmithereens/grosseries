@@ -8,16 +8,9 @@ $(document).ready(function() {
     var blanks = $("#itemInput").val().toUpperCase();
     list.push(blanks);
 
-    console.log(list);
-
-    // blanks.forEach(function(blank) {
-    //   userInput = $("input#" + blank).val();
-    //   list.push(userInput);
-    //   // console.log(list);
-    // });
-    //
     $("input").val("");
-    // event.preventDefault();
+    list.sort();
+
   });
 
   $("#display").click(function() {
@@ -25,22 +18,4 @@ $(document).ready(function() {
       $("#finalList").append("<li>" + list[x] + "</li>");
     }
   });
-
-  // $("#formOne").submit(function() {
-  //   var cloneList = list.slice();
-  //   var listItems = cloneList.toString();
-  //   var listUpper = listItems.toUpperCase();
-  //   console.log(listUpper);
-  //
-  //   var listSorted = listUpper.sort();
-  //   alert(listSorted);
-  //
-  //
-  //
-  // });
-
 });
-
-
-
-    // $("#grocout").show();
