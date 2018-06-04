@@ -12,23 +12,24 @@
       <h1>Grocery List Maker</h1>
       <div>
         <form id="formOne">
-          <div class="form-group">
-            <label for="thing1">Grocery item (Put what you need here)</label>
-            <input id="thing1" class="form-control" type="text">
+          <div class="grocin">
+            <label for="itemInput">Grocery item (Put what you need here)</label>
+            <input id="itemInput" class="form-control" type="text">
           </div>
 
-
+          <!-- <input type="button" value="Save" onclick="insert(this.form.title.value)">
+          <input type="button" value="Show data" onclick="show()"> <br> -->
           <button type="submit" class="btn-info">Buy this stuff!!!</button>
         </form>
       </div>
 
-      <div id="groceries">
+      <div id="grocout">
         <h1>A delicious adventure</h1>
         <p>
           These are the groceries I need to buy:
         </p>
         <ol>
-          <span class="thing1"></span>
+          <span class="itemOutput"></span>
         </ol>
       </div>
     </div>
